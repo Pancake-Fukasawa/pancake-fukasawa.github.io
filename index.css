@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image:url(../images/background_texture_index02.gif); 
+	background-repeat: no-repeat;  
+	background-position: top center;  
+	background-attachment: fixed; 
+	background-size: cover;
+}
+
+/*-- container --*/
+#container #pinterest{
+	margin:10px;
+}
+
+#container #pinterest .grid{
+	display: inline-block;
+	/* out shadow
+	box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);*/
+}
+
+#container #pinterest .grid img{
+	border-radius: 10px;
+}
+
+#container #pinterest .grid:after {
+	position: absolute;
+	display: block;
+	border-radius: 10px;
+	content: "";
+	top: 0;
+	left: 0;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5),
+	inset 0 0 50px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	height: 100%;
+}
+
+/*-- title box --*/
+#title_index{
+	margin-left: -127px;  /*縦横の半分をネガティブマージンでずらす*/
+	margin-top: -170px;
+	top: 50%;  /*上端を中央に*/
+	left: 50%;  /*左端を中央に*/
+	width: 255px;
+	height: 271px;
+	display:block;
+	position: fixed;
+}
+
+#title_index #title_box{
+	width: 255px;
+	height: 271px;
+	margin: 0 auto;
+	background-color:#FFF;
+	opacity:0.85;
+}
+
+#title_index #title_box #title{
+	position: absolute;
+	top: 60px;
+	left:19px;
+}
+
+#title_index #title_box #title_logo a #guest{
+	position: absolute;
+	bottom: 40px;
+	left: 65px;
+}
+
+#title_index #title_box #title_logo a #instagram{
+	position: absolute;
+	bottom: 40px;
+	right: 65px;
+}
